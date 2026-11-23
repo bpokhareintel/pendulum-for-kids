@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Pendulum Lab</title>
+  <style>
+    body {
+      max-width: 720px;
+      margin: 24px auto;
+      padding: 0 16px;
+      color: #183153;
+      background: #f2f8ff;
+      font: 16px/1.5 system-ui, sans-serif;
+    }
+    main {
+      padding: 20px;
+      background: white;
+      border: 2px solid #cfe5ff;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px #18315318;
+    }
+    h1 { margin-top: 0; color: #1769aa; }
+    .controls { display: flex; flex-wrap: wrap; gap: 20px; }
+    label { display: grid; gap: 4px; min-width: 210px; }
+    canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-top: 16px;
+      border-radius: 12px;
+      background: linear-gradient(#e9f6ff, #ffffff);
+    }
+    output { font-weight: 700; color: #1769aa; }
+    .note { color: #40546b; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>🎢 My Pendulum Lab</h1>
+    <p>Change a setting and see how your pendulum swings!</p>
+    <div class="controls">
+      <label>
+        String length: <output id="lengthValue"></output>
+        <input id="length" type="range" min="0.5" max="2" step="0.1" value="1">
+      </label>
+      <label>
+        Starting angle: <output id="angleValue"></output>
+        <input id="angle" type="range" min="10" max="60" step="1" value="30">
+      </label>
+    </div>
+    <p id="period" aria-live="polite"></p>
+    <canvas id="scene" width="640" height="360"
+      aria-label="An animated pendulum swinging from a support"></canvas>
+    <p class="note">Try making the string longer. Does one complete swing take more time?</p>
+  </main>
+  <script src="pendulum-simulation.js"></script>
+</body>
+</html>

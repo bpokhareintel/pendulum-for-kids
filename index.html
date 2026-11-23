@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Amazing Pendulum!</title>
+  <meta name="description" content="Learn how pendulums swing, try a safe experiment, and play with an interactive pendulum simulation.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>🎢 The Amazing Pendulum!</h1>
+    <p>A swinging bob, a string, and a little help from gravity</p>
+  </header>
+
+  <nav aria-label="Page sections">
+    <div class="wrap">
+      <a href="#what">What is it?</a>
+      <a href="#how">How it works</a>
+      <a href="#length">Length</a>
+      <a href="#clocks">Clocks</a>
+      <a href="#experiment">Experiment</a>
+      <a href="#lab">Simulation</a>
+      <a href="#challenges">Challenges</a>
+      <a href="#quiz">Quiz</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section class="card">
+      <p>Have you ever watched a playground swing move back and forth? That motion is a lot like a <strong>pendulum</strong>. Pendulums are simple, but they help us understand motion, energy, and even how clocks keep time.</p>
+    </section>
+
+    <section class="card" id="what">
+      <h2>🧭 What is a pendulum?</h2>
+      <p>A simple pendulum has two main parts:</p>
+      <ul>
+        <li><strong>A support</strong> at the top</li>
+        <li><strong>A bob</strong> (a small weight) hanging from a string</li>
+      </ul>
+      <p>Pull the bob to one side and let go. It swings back and forth around its resting position.</p>
+      <figure>
+        <svg viewBox="0 0 300 200" role="img" aria-label="A pendulum with the bob shown at the left, the resting position in the middle, and the right">
+          <line x1="40" y1="20" x2="260" y2="20" stroke="#8ab6dc" stroke-width="3"/>
+          <path d="M72 148 A140 140 0 0 0 228 148" fill="none" stroke="#f4a261" stroke-width="2" stroke-dasharray="5 5"/>
+          <line x1="150" y1="20" x2="72" y2="148" stroke="#40546b" stroke-width="2" opacity="0.4"/>
+          <line x1="150" y1="20" x2="228" y2="148" stroke="#40546b" stroke-width="2" opacity="0.4"/>
+          <line x1="150" y1="20" x2="150" y2="160" stroke="#40546b" stroke-width="3"/>
+          <circle cx="72" cy="148" r="12" fill="#ffca3a" stroke="#d99b00" stroke-width="3" opacity="0.5"/>
+          <circle cx="228" cy="148" r="12" fill="#ffca3a" stroke="#d99b00" stroke-width="3" opacity="0.5"/>
+          <circle cx="150" cy="160" r="14" fill="#ffca3a" stroke="#d99b00" stroke-width="3"/>
+          <circle cx="150" cy="20" r="6" fill="#1769aa"/>
+          <text x="150" y="10" text-anchor="middle" font-size="12" fill="#183153">support</text>
+          <text x="150" y="190" text-anchor="middle" font-size="12" fill="#183153">resting position</text>
+        </svg>
+        <figcaption>The bob at different points in its swing</figcaption>
+      </figure>
+      <p>One trip from one side to the other side and back again is <strong>one complete swing</strong>, also called one <strong>oscillation</strong>.</p>
+    </section>
+
+    <section class="card" id="how">
+      <h2>⚙️ How does it work?</h2>
+      <ol class="steps">
+        <li><h3>Lift and let go</h3>When you pull the bob up to one side, you give it <strong>gravitational potential energy</strong>—stored energy because it is higher than its lowest point.</li>
+        <li><h3>Gravity pulls it down</h3>When you let go, gravity pulls the bob toward the lowest point. The string guides the bob along a curved path.</li>
+        <li><h3>It swings past the middle</h3>At the bottom, the bob is moving fastest. It has lots of <strong>kinetic energy</strong>, the energy of motion. It swings past the middle because it has momentum.</li>
+        <li><h3>It climbs the other side</h3>The bob rises and slows down. Its motion energy changes back into stored gravitational energy. At the far end, it pauses for an instant before swinging back.</li>
+        <li><h3>The pattern repeats</h3>Energy keeps changing between stored energy and motion energy. In a real pendulum, air resistance and friction slowly take a little energy away, so the swings get smaller and eventually stop.</li>
+      </ol>
+      <div class="callout"><strong>Energy swap:</strong> high point = more stored energy; lowest point = more motion energy.</div>
+    </section>
+
+    <section class="card" id="length">
+      <h2>📏 What changes the swing?</h2>
+      <p>For small swings, a pendulum's time for one complete swing is mostly controlled by its <strong>length</strong>.</p>
+      <ul>
+        <li><strong>Longer string → slower swing</strong></li>
+        <li><strong>Shorter string → quicker swing</strong></li>
+        <li><strong>A heavier bob → about the same timing</strong></li>
+        <li><strong>A bigger starting pull → about the same timing</strong>, as long as the swing is not too wide</li>
+      </ul>
+      <p>The approximate period (time for one complete swing) is:</p>
+      <p class="formula">T ≈ 2π × √(L ÷ g)</p>
+      <p>Here, <strong>T</strong> is the time in seconds, <strong>L</strong> is the pendulum length in metres, and <strong>g</strong> is Earth's gravity (about <strong>9.8 m/s²</strong>). You don't need to memorize the equation—the big idea is that a longer pendulum takes more time to swing.</p>
+      <p>For example, a pendulum about <strong>1 metre</strong> long takes about <strong>2 seconds</strong> to swing out and back.</p>
+    </section>
+
+    <section class="card" id="clocks">
+      <h2>🕰️ Pendulums and clocks</h2>
+      <p>Because a pendulum can swing at a steady rhythm, it was once used to help clocks keep time. A clock counts the swings and uses them to move its hands. Modern clocks often use other timekeeping parts, but pendulums are still useful in science demonstrations and some clocks.</p>
+    </section>
+
+    <section class="card" id="experiment">
+      <h2>🔬 Try it yourself: a safe pendulum experiment</h2>
+      <h3>You will need</h3>
+      <ul>
+        <li>A piece of string</li>
+        <li>A small, safe object to use as a bob (for example, a large washer)</li>
+        <li>A ruler</li>
+        <li>A place to hang it securely, with an adult's help</li>
+        <li>A timer and a notebook</li>
+      </ul>
+      <h3>Steps</h3>
+      <ol>
+        <li>Ask an adult to help you hang the string from a secure support.</li>
+        <li>Measure the length from the hanging point to the middle of the bob.</li>
+        <li>Pull the bob gently to one side. Keep the starting angle small.</li>
+        <li>Let go without giving it a push.</li>
+        <li>Time <strong>10 complete swings</strong>, then divide the time by 10 to estimate one swing's period.</li>
+        <li>Repeat and compare your results.</li>
+        <li>Change only the string length and try again. Does the longer pendulum take more time?</li>
+      </ol>
+      <table>
+        <thead>
+          <tr><th>String length</th><th>Time for 10 swings</th><th>Average time for 1 swing</th></tr>
+        </thead>
+        <tbody>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+      <div class="callout safe"><strong>Be safe:</strong> Keep the swing gentle, use a lightweight bob, keep faces and breakable things away, and never climb or hang anything without an adult.</div>
+    </section>
+
+    <section class="card" id="lab">
+      <h2>🖥️ Pendulum simulation</h2>
+      <p>Change the string length and starting angle. The bob follows a realistic small-angle pendulum model, and a trail shows where it has been.</p>
+      <div class="controls">
+        <label>
+          String length: <output id="lengthValue"></output>
+          <input id="length" type="range" min="0.5" max="2" step="0.1" value="1">
+        </label>
+        <label>
+          Starting angle: <output id="angleValue"></output>
+          <input id="angle" type="range" min="10" max="60" step="1" value="30">
+        </label>
+      </div>
+      <p id="period" aria-live="polite"></p>
+      <canvas id="scene" width="640" height="360" aria-label="An animated pendulum swinging from a support"></canvas>
+      <p>Try making the string longer. Does one complete swing take more time?</p>
+      <details>
+        <summary>🧠 What is the simulation doing?</summary>
+        <p>It uses the small-angle pendulum rule to estimate the bob's position over time:</p>
+        <p class="formula">angle = starting angle × cos(2π × time ÷ period)</p>
+        <p>The program calculates the period from the string length and gravity, then redraws the bob many times each second. This is a simplified model: it ignores air resistance, string stretch, and other small real-world effects.</p>
+      </details>
+    </section>
+
+    <section class="card" id="challenges">
+      <h2>🎯 Mini challenges</h2>
+      <ol>
+        <li><strong>Slow swing:</strong> Can you make the pendulum swing more slowly?</li>
+        <li><strong>Fast swing:</strong> What setting makes it swing faster?</li>
+        <li><strong>Big starting angle:</strong> Does changing the angle change the displayed period in this simple model?</li>
+        <li><strong>Real life vs. simulation:</strong> What might make a real pendulum gradually stop?</li>
+        <li><strong>Fair test:</strong> If you compare two pendulums, what should you change—and what should you keep the same?</li>
+      </ol>
+    </section>
+
+    <section class="card" id="quiz">
+      <h2>✅ Quick quiz</h2>
+      <ol>
+        <li>What pulls the bob toward the bottom of its path?</li>
+        <li>When is the bob moving fastest?</li>
+        <li>What usually makes a pendulum swing more slowly: a longer string or a heavier bob?</li>
+        <li>What happens to a real pendulum's swing after a long time?</li>
+      </ol>
+      <button type="button" id="reveal" aria-expanded="false" aria-controls="answers">Show answers</button>
+      <p id="answers" hidden><strong>Answers:</strong> 1. Gravity. 2. At the lowest point. 3. A longer string. 4. Friction and air resistance take energy away, so it slows and stops.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>🌟 Remember</strong></p>
+    <p>A pendulum swings because gravity pulls it toward the bottom, while its motion carries it past the middle. Its energy changes back and forth—and the length of the string helps set the rhythm!</p>
+  </footer>
+
+  <script src="pendulum-simulation.js"></script>
+  <script>
+    const reveal = document.querySelector("#reveal");
+    const answers = document.querySelector("#answers");
+    reveal.addEventListener("click", () => {
+      answers.hidden = !answers.hidden;
+      reveal.textContent = answers.hidden ? "Show answers" : "Hide answers";
+      reveal.setAttribute("aria-expanded", String(!answers.hidden));
+    });
+  </script>
+</body>
+</html>
